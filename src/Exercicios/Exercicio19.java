@@ -21,8 +21,33 @@ Use:
 - operadores lógicos.
 */
 
+import java.util.Scanner;
+
 public class Exercicio19 {
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite sua idade: ");
+        int idadePessoa = scanner.nextInt();
+
+        System.out.print("Você sabe nadar? (true/false) ");
+        boolean sabeNadar = scanner.nextBoolean();
+
+        System.out.print("Você possui autorização para nadar neste lago? (true/false) ");
+        boolean possuiAutorizacao = scanner.nextBoolean();
+
+        if(idadePessoa >= 18 && sabeNadar){
+            System.out.println("Pode entrar sozinho.");
+        }
+        else if(idadePessoa < 18 && sabeNadar && possuiAutorizacao){
+            System.out.println("Pode entrar acompanhado");
+        }
+        else{
+            System.out.println("Entrada proibida.");
+        }
+
+        scanner.close();
 
     }
 }

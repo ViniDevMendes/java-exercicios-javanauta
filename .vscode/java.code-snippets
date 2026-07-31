@@ -1,0 +1,25 @@
+{
+    "System.out.print": {
+        "prefix": "soutp",
+        "body": [
+            "System.out.print(\"$1\");"
+        ],
+        "description": "System.out.print"
+    },
+
+    "Scanner": {
+        "prefix": "scan",
+        "body": [
+            "Scanner scanner = new Scanner(System.in);"
+        ],
+        "description": "Scanner"
+    },
+
+    "Scanner Close": {
+        "prefix": "close",
+        "body": [
+            "scanner.close();"
+        ],
+        "description": "Fecha o Scanner"
+    }
+}

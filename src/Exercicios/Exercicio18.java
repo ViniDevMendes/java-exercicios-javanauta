@@ -19,8 +19,30 @@ Use:
 - && e !.
 */
 
+import java.util.Scanner;
+
 public class Exercicio18 {
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Você possui Login? (True/False)\nR: ");
+        boolean temLogin = scanner.nextBoolean();
+
+        System.out.print("Você possui Senha? (True/False)\nR: ");
+        boolean temSenha = scanner.nextBoolean();
+
+        System.out.print("A conta está bloqueada? (True/False)\nR: ");
+        boolean estaBloqueada = scanner.nextBoolean();
+
+        if(temLogin && temSenha && !estaBloqueada){
+            System.out.println("Acesso liberado");
+        }
+        else{
+            System.out.println("Acesso negado.");
+        }
+
+        scanner.close();
 
     }
 }

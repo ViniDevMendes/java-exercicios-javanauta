@@ -17,8 +17,30 @@ Mostre uma das mensagens:
 
 */
 
+import java.util.Scanner;
+
 public class Exercicio17 {
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Escreva a sua idade\nR: ");
+        int idade = scanner.nextInt();
+
+        System.out.print("Você é estudante? (True/False)\nR: ");
+        boolean estudante = scanner.nextBoolean();
+
+        if(idade >= 60){
+            System.out.println("Desconto de idoso.");
+        }
+        else if(estudante){
+            System.out.println("Desconto de estudante");
+        }
+        else{
+            System.out.println("Sem desconto.");
+        }
+
+        scanner.close();
 
     }
 }
