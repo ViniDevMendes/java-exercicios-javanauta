@@ -39,11 +39,9 @@ public class Exercicio19 {
 
         if(idadePessoa >= 18 && sabeNadar){
             System.out.println("Pode entrar sozinho.");
-        }
-        else if(idadePessoa < 18 && sabeNadar && possuiAutorizacao){
+        } else if(idadePessoa < 18 && sabeNadar && possuiAutorizacao){
             System.out.println("Pode entrar acompanhado");
-        }
-        else{
+        } else{
             System.out.println("Entrada proibida.");
         }
 
